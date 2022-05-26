@@ -1,6 +1,73 @@
-@use "../node_modules/bootstrap/scss/bootstrap.scss";
+// @use "../node_modules/bootstrap/scss/bootstrap.scss";
 
 
-.nav{
+body{
+    background-color: rgb(215, 215, 215);
+}
+
+.upperNav{
     display:flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    h1{
+        font-size: 1.5rem;
+    }
+}
+
+header{
+    height: 500px;
+    margin-bottom: 2rem;
+    background-color: rgb(200, 200, 200);
+}
+
+main>div{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+
+.ref{
+    background-color: rgb(200, 200, 200);
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .print{
+    }
+
+    .web{
+    }
+
+    .brand{
+    }
+}
+
+.catcher{
+    background-color: rgb(200, 200, 200);
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.skills{
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact{
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    flex-direction: column;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
 }
