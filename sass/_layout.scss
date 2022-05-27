@@ -1,8 +1,9 @@
 // @use "../node_modules/bootstrap/scss/bootstrap.scss";
+@use "colors";
 
 
 body{
-    background-color: rgb(215, 215, 215);
+    background-color: colors.$mainCol;
 }
 
 .upperNav{
@@ -21,18 +22,22 @@ header{
     background-color: rgb(200, 200, 200);
 }
 
-main>div{
+main{
+    > div{
     display: flex;
     margin-bottom: 2rem;
+    }
 }
 
 
 .ref{
     background-color: rgb(200, 200, 200);
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 3rem;
 
     .print{
+        background-color: rgb(175, 175, 175);
+
     }
 
     .web{
