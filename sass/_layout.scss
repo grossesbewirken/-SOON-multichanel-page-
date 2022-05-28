@@ -1,78 +1,136 @@
-// @use "../node_modules/bootstrap/scss/bootstrap.scss";
+@use "../node_modules/bootstrap/scss/bootstrap.scss";
 @use "colors";
 
-
-body{
-    background-color: colors.$mainCol;
+body {
+  background-color: pink;
 }
 
-.upperNav{
-    display:flex;
+.upperNav {
+  border: 3px solid hotpink;
+  display: flex;
+  justify-content: center;
+  h1 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: colors.$white100;
+  }
+  > div {
+    padding: 1rem;
+  }
+}
+
+header {
+  height: 500px;
+  margin-bottom: 2rem;
+  background-color: colors.$secCol;
+}
+
+.nav {
+  margin: 1rem;
+  background-color: colors.$secCol;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 650px) {
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+main {
+  margin: 1rem;
+  background-color: colors.$secCol;
+
+  > div {
+    margin: 1rem;
+  }
+  hr {
+    border: 2px solid colors.$white100;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+// P R O J E C T S
+.project {
+  h1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .reference {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 650px) {
+      flex-direction: row;
+      gap: 3rem;
+    }
+
+    .refPic {
+      border: 3px solid rgb(0, 255, 21);
+      display: flex;
+      flex-direction: column;
+      .pic {
+        background-color: colors.$thiCol;
+        height: 300px;
+        width: 100%;
+      }
+      .sub {
+        p {
+          color: colors.$white50;
+        }
+      }
+    }
+
+    .refTxt {
+      display: flex;
+      flex-direction: column;
+      .refPro {
+        display: flex;
+        flex-direction: column;
+        .pro {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}
+
+.catcher-container {
+  display: flex;
+  justify-content: center;
+  .catcher {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    h1{
-        font-size: 1.5rem;
-    }
+    width: 70%;
+  }
 }
 
-header{
-    height: 500px;
-    margin-bottom: 2rem;
-    background-color: rgb(200, 200, 200);
+.skills {
+  background-color: rgb(200, 200, 200);
+  display: flex;
+  flex-direction: column;
 }
 
-main{
-    > div{
-    display: flex;
-    margin-bottom: 2rem;
-    }
+.contact {
+  background-color: rgb(200, 200, 200);
+  display: flex;
+  flex-direction: column;
 }
 
-
-.ref{
-    background-color: rgb(200, 200, 200);
-    flex-direction: column;
-    gap: 3rem;
-
-    .print{
-        background-color: rgb(175, 175, 175);
-
-    }
-
-    .web{
-    }
-
-    .brand{
-    }
+footer {
+  background-color: rgb(200, 200, 200);
+  display: flex;
+  flex-direction: column;
 }
 
-.catcher{
-    background-color: rgb(200, 200, 200);
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.skills{
-    background-color: rgb(200, 200, 200);
-    display: flex;
-    flex-direction: column;
-}
-
-.contact{
-    background-color: rgb(200, 200, 200);
-    display: flex;
-    flex-direction: column;
-}
-
-footer{
-    background-color: rgb(200, 200, 200);
-    display: flex;
-    flex-direction: column;
-}
-
-.icons{
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
 }

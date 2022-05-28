@@ -1,12 +1,21 @@
-// @use "../node_modules/bootstrap/scss/bootstrap.scss";
+@use "../node_modules/bootstrap/scss/bootstrap.scss";
+@use "colors";
 
-.btn{
-    border: 1px solid black;
+.button-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+
+  .button {
+    display: flex;
+    justify-content: center;
+    color: colors.$white100;
     border-radius: 100px;
-    height: 50px;
-    width: 80%;
-}
-
-.amazing{
-    background-color: rgb(255, 150, 150);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    background-image: colors.$gbw-grad;
+  }
 }
