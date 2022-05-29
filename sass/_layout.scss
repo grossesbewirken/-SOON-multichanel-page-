@@ -1,136 +1,104 @@
-@use "../node_modules/bootstrap/scss/bootstrap.scss";
+// @use "../node_modules/bootstrap/scss/bootstrap.scss";
 @use "colors";
 
 body {
-  background-color: pink;
-}
-
-.upperNav {
-  border: 3px solid hotpink;
-  display: flex;
-  justify-content: center;
-  h1 {
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: colors.$white100;
-  }
-  > div {
-    padding: 1rem;
-  }
+  background-color: hotpink;
 }
 
 header {
   height: 500px;
-  margin-bottom: 2rem;
-  background-color: colors.$secCol;
+  background-image: colors.$gbw-grad-dark;
 }
 
-.nav {
-  margin: 1rem;
-  background-color: colors.$secCol;
+h1 {
+  font-size: 3rem;
+}
+//
+//
+//
+// C A R D
+//
+.card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  @media (min-width: 650px) {
+  padding: 2rem;
+  gap: 2rem;
+  @media (min-width: 700px) {
     flex-direction: row;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-}
-
-main {
-  margin: 1rem;
-  background-color: colors.$secCol;
-
-  > div {
-    margin: 1rem;
-  }
-  hr {
-    border: 2px solid colors.$white100;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-}
-
-// P R O J E C T S
-.project {
-  h1 {
-    font-size: 3rem;
-    font-weight: 500;
-  }
-
-  .reference {
+  .block {
     display: flex;
     flex-direction: column;
-    @media (min-width: 650px) {
-      flex-direction: row;
-      gap: 3rem;
-    }
-
-    .refPic {
-      border: 3px solid rgb(0, 255, 21);
-      display: flex;
-      flex-direction: column;
-      .pic {
-        background-color: colors.$thiCol;
-        height: 300px;
-        width: 100%;
-      }
-      .sub {
-        p {
-          color: colors.$white50;
-        }
-      }
-    }
-
-    .refTxt {
-      display: flex;
-      flex-direction: column;
-      .refPro {
-        display: flex;
-        flex-direction: column;
-        .pro {
-          display: flex;
-          flex-direction: row;
-        }
-      }
+    @media (min-width: 700px) {
+      width: 50%;
+      justify-content: center;
     }
   }
 }
 
-.catcher-container {
+#reverse{
+  @media (min-width: 700px) {
+    flex-direction: row-reverse;
+  }
+}
+//
+//
+//
+// C A R D - P I C T U R E S
+//
+.picMedia {
+  height: 400px;
+  background-color: grey;
+}
+.picWeb {
+  height: 400px;
+  background-color: grey;
+}
+.picBrand {
+  height: 400px;
+  background-color: grey;
+}
+//
+//
+//
+.center-container {
   display: flex;
-  justify-content: center;
-  .catcher {
-    display: flex;
-    flex-direction: column;
+  background-image: colors.$gbw-grad-dark;
+  padding: 2rem;
+  @media (min-width: 700px) {
+    padding: 5rem;
     justify-content: center;
-    width: 70%;
+  }
+  .catcher {
+    border: 1px solid hotpink;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 700px) {
+      width: 60%;
+    }
+    // .button-container {
+    //   justify-content: center;
+    // }
   }
 }
-
-.skills {
-  background-color: rgb(200, 200, 200);
-  display: flex;
-  flex-direction: column;
-}
-
-.contact {
-  background-color: rgb(200, 200, 200);
-  display: flex;
-  flex-direction: column;
-}
-
+//
+//
+//
+// C A R D - P I C T U R E S
+//
 footer {
-  background-color: rgb(200, 200, 200);
   display: flex;
   flex-direction: column;
-}
-
-.icons {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
+  background-image: colors.$gbw-grad-light;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
 }

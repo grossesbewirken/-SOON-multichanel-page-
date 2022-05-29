@@ -1,4 +1,4 @@
-@use "../node_modules/bootstrap/scss/bootstrap.scss";
+// @use "../node_modules/bootstrap/scss/bootstrap.scss";
 
 $mainCol: rgb(175, 175, 175);
 $secCol: rgb(200, 200, 200);
@@ -9,8 +9,7 @@ $white100: rgba(255, 255, 255, 1);
 $gbw-light: #00ffbb;
 $gbw-dark: #0078aa;
 
-$gbw-grad: linear-gradient(135deg, #00ffbb, #0078aa 90%);
+$gbw-grad-light: linear-gradient(135deg, #00ffbb 20%, #0078aa 90%);
+$gbw-grad-dark: linear-gradient(135deg, #00be8b, #006c9a 90%);
 
-* {
-  border: 1px solid greenyellow;
-}
+// $gbw-grad-dark: radial-gradient(circle at 0% 10%, #009f74, #006c9a 90%);

@@ -1,21 +1,39 @@
-@use "../node_modules/bootstrap/scss/bootstrap.scss";
+// @use "../node_modules/bootstrap/scss/bootstrap.scss";
 @use "colors";
 
 .button-container {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
+  @media (min-width: 650px) {
+    width: 45vw;
+    justify-content: flex-start;
+  }
 
   .button {
     display: flex;
     justify-content: center;
-    color: colors.$white100;
     border-radius: 100px;
-    padding-left: 3rem;
-    padding-right: 3rem;
     padding-top: 1rem;
+    padding-right: 3rem;
     padding-bottom: 1rem;
+    padding-left: 3rem;
     align-items: center;
-    background-image: colors.$gbw-grad;
+    border: 2px solid colors.$white100;
   }
+}
+
+.card {
+  background-image: colors.$gbw-grad-dark;
+}
+
+hr {
+  border: 2px solid colors.$white100;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.icons {
+  display: flex;
+  font-size: 2rem;
 }

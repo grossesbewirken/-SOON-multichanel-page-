@@ -1,22 +1,10 @@
-@use "../node_modules/bootstrap/scss/bootstrap.scss";
+// @use "../node_modules/bootstrap/scss/bootstrap.scss";
+@use "colors";
 
 * {
   font-family: "Montserrat", sans-serif;
-  color: rgb(0, 0, 0);
-  font-weight: 500;
+  color: colors.$white100;
 }
 
 h1 {
-}
-
-h3 {
-  color: red;
-}
-
-.icons {
-  font-size: 2rem;
-}
-
-h4 {
-  font-weight: 700;
 }
