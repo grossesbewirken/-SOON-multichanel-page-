@@ -9,7 +9,7 @@ header {
   height: 500px;
   background-image: colors.$gbw-grad-dark;
   @media (min-width: 700px) {
-    height: 750px;
+    height: 775px;
   }
 }
 
@@ -24,7 +24,6 @@ header {
   flex-direction: column;
   padding: 2rem;
   gap: 2rem;
-
   @media (min-width: 700px) {
     flex-direction: row;
     padding-left: 5rem;
@@ -39,7 +38,7 @@ header {
     }
   }
 }
-
+// 
 #card-reverse{
   @media (min-width: 700px) {
     flex-direction: row-reverse;

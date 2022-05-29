@@ -22,12 +22,14 @@
     padding-left: 3rem;
     align-items: center;
     border: 2px solid colors.$white100;
+    font-weight: 500;
   }
 }
 
 .button:hover{
   background-color: colors.$white100;
   color: colors.$gbw-dark;
+  font-weight: 500;
 }
 
 
@@ -54,6 +56,6 @@ hr {
   height: 7rem;
   @media (min-width: 700px) {
     padding-top: 2rem;
-    height:12rem;
+    height:9rem;
   }
 }
