@@ -10,11 +10,12 @@ body {
 
 header {
   height: 500px;
-  background-image: linear-gradient(135deg, #00be8b, #006c9a 90%);
+  background-image: linear-gradient(135deg, #00dca1, #004690);
 }
-
-h1 {
-  font-size: 3rem;
+@media (min-width: 700px) {
+  header {
+    height: 750px;
+  }
 }
 
 .card {
@@ -42,7 +43,7 @@ h1 {
 }
 
 @media (min-width: 700px) {
-  #reverse {
+  #card-reverse {
     flex-direction: row-reverse;
   }
 }
@@ -64,7 +65,7 @@ h1 {
 
 .center-container {
   display: flex;
-  background-image: linear-gradient(135deg, #00be8b, #006c9a 90%);
+  background-image: linear-gradient(135deg, #00dca1, #004690);
   padding: 2rem;
 }
 @media (min-width: 700px) {
@@ -104,12 +105,17 @@ footer .icons {
   color: rgb(255, 255, 255);
 }
 
+h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
 .button-container {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
-@media (min-width: 650px) {
+@media (min-width: 700px) {
   .button-container {
     width: 45vw;
     justify-content: flex-start;
@@ -127,8 +133,13 @@ footer .icons {
   border: 2px solid rgb(255, 255, 255);
 }
 
+.button:hover {
+  background-color: rgb(255, 255, 255);
+  color: #0078aa;
+}
+
 .card {
-  background-image: linear-gradient(135deg, #00be8b, #006c9a 90%);
+  background-image: linear-gradient(135deg, #00dca1, #004690);
 }
 
 hr {
@@ -140,6 +151,20 @@ hr {
 .icons {
   display: flex;
   font-size: 2rem;
+}
+
+.logo-container {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  border: 1px solid hotpink;
+  height: 7rem;
+}
+@media (min-width: 700px) {
+  .logo-container {
+    padding-top: 2rem;
+    height: 12rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

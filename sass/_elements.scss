@@ -1,11 +1,13 @@
 // @use "../node_modules/bootstrap/scss/bootstrap.scss";
 @use "colors";
-
+// 
+// 
+// 
 .button-container {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
-  @media (min-width: 650px) {
+  @media (min-width: 700px) {
     width: 45vw;
     justify-content: flex-start;
   }
@@ -23,6 +25,12 @@
   }
 }
 
+.button:hover{
+  background-color: colors.$white100;
+  color: colors.$gbw-dark;
+}
+
+
 .card {
   background-image: colors.$gbw-grad-dark;
 }
@@ -36,4 +44,16 @@ hr {
 .icons {
   display: flex;
   font-size: 2rem;
+}
+
+.logo-container{
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  border: 1px solid hotpink;
+  height: 7rem;
+  @media (min-width: 700px) {
+    padding-top: 2rem;
+    height:12rem;
+  }
 }
