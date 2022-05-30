@@ -21,11 +21,11 @@
     padding-bottom: 1rem;
     padding-left: 3rem;
     align-items: center;
-    border: 2px solid colors.$white100;
+    border: 3px solid colors.$gbw-light;
     font-weight: 500;
     &:hover{
-      background-color: colors.$white100;
-      color: colors.$gbw-dark;
+      background-color: colors.$gbw-light;
+      border: 3px solid colors.$gbw-light;
       font-weight: 500;
     }
   }
@@ -43,10 +43,10 @@
   align-items: center;
   font-family: "Montserrat", sans-serif;
   color: colors.$white100;
-  border: 2px solid colors.$white100;
+  border: 3px solid colors.$gbw-light;
   &:hover{
-    background-color: colors.$white100;
-    color: colors.$gbw-dark;
+    background-color: colors.$gbw-light;
+    border: 3px solid colors.$gbw-light;
     font-weight: 500;
   }
 }
