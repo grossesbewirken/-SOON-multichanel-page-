@@ -27,3 +27,21 @@ p{
   line-height: 130%;
 }
 
+/* - - L I N K S - - - - */
+a{
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+a:link {
+  color: colors.$white100;
+}
+a:visited {
+  color: colors.$white100;
+}
+a:hover {
+  color: colors.$gbw-dark;
+}
+a:active {
+  color: colors.$white100;
+}

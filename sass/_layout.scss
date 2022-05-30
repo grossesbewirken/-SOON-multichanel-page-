@@ -13,11 +13,8 @@ header {
 }
 
 
-//
-//
-//
 // C A R D S
-//
+
 .card {
   display: flex;
   flex-direction: column;
@@ -47,16 +44,25 @@ header {
 // C A R D - P I C T U R E S
 //
 .picMedia {
-  height: 400px;
+  height: 350px;
   background-color: grey;
+  @media (min-width: 700px) {
+    height: 600px;
+  }
 }
 .picWeb {
-  height: 400px;
+  height: 350px;
   background-color: grey;
+  @media (min-width: 700px) {
+    height: 600px;
+  }
 }
 .picBrand {
-  height: 400px;
+  height: 350px;
   background-color: grey;
+  @media (min-width: 700px) {
+    height: 600px;
+  }
 }
 //
 //
@@ -74,9 +80,9 @@ header {
     @media (min-width: 700px) {
       width: 60%;
     }
-    // .button-container {
-    //   justify-content: center;
-    // }
+    h1 {
+      margin-bottom: 0.5rem;
+    }
   }
 }
 //
@@ -84,46 +90,50 @@ header {
 //
 footer {
   display: flex;
-  margin:2rem;
-  padding-bottom:1rem;
+  margin-left:2rem;
+  margin-right:2rem;
+  margin-bottom: 3rem;
+  padding:1rem;
   flex-direction: column;
   align-items: center;
   border-radius: 8px;
   background-image: colors.$gbw-grad-dark;
-  h2{
-    padding-bottom: 0.2rem;
+  h4{
+    padding-bottom: 0.5rem;
   }
   .icons {
     display: flex;
-    justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
   }
 }
 
 .partners{
+
   display: flex;
   flex-direction: column;
+  margin-right: 2rem;
   margin-left: 2rem;
   margin-bottom: 2rem;
   margin-top: 5rem;
 
   .refs{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 2rem;
 
     .fit{
+
       img{
-      margin-right: 3rem;
       margin-top: 3rem;
       width: 5rem;
       height: 3rem;
       object-fit: scale-down;
+      box-sizing: content-box;
         @media (min-width: 700px) {
-          align-content: flex-start;
-          margin-right: 3rem;
           margin-top: 2rem;
-          width: 7rem;
-          height: 6rem;
+          width: 5rem;
+          height: 4.5rem;
         }
       }
     }

@@ -57,18 +57,33 @@ header {
 }
 
 .picMedia {
-  height: 400px;
+  height: 350px;
   background-color: grey;
+}
+@media (min-width: 700px) {
+  .picMedia {
+    height: 600px;
+  }
 }
 
 .picWeb {
-  height: 400px;
+  height: 350px;
   background-color: grey;
+}
+@media (min-width: 700px) {
+  .picWeb {
+    height: 600px;
+  }
 }
 
 .picBrand {
-  height: 400px;
+  height: 350px;
   background-color: grey;
+}
+@media (min-width: 700px) {
+  .picBrand {
+    height: 600px;
+  }
 }
 
 .center-container {
@@ -90,50 +105,55 @@ header {
     width: 60%;
   }
 }
+.center-container .catcher h1 {
+  margin-bottom: 0.5rem;
+}
 
 footer {
   display: flex;
-  margin: 2rem;
-  padding-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
   flex-direction: column;
   align-items: center;
   border-radius: 8px;
   background-image: linear-gradient(135deg, #00dca1, #004690);
 }
-footer h2 {
-  padding-bottom: 0.2rem;
+footer h4 {
+  padding-bottom: 0.5rem;
 }
 footer .icons {
   display: flex;
-  justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .partners {
   display: flex;
   flex-direction: column;
+  margin-right: 2rem;
   margin-left: 2rem;
   margin-bottom: 2rem;
   margin-top: 5rem;
 }
 .partners .refs {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 .partners .refs .fit img {
-  margin-right: 3rem;
   margin-top: 3rem;
   width: 5rem;
   height: 3rem;
   object-fit: scale-down;
+  box-sizing: content-box;
 }
 @media (min-width: 700px) {
   .partners .refs .fit img {
-    align-content: flex-start;
-    margin-right: 3rem;
     margin-top: 2rem;
-    width: 7rem;
-    height: 6rem;
+    width: 5rem;
+    height: 4.5rem;
   }
 }
 
@@ -161,6 +181,29 @@ h3 {
 p {
   font-weight: 500;
   line-height: 130%;
+}
+
+/* - - L I N K S - - - - */
+a {
+  font-family: "Lexend", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:link {
+  color: rgb(255, 255, 255);
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: #0078aa;
+}
+
+a:active {
+  color: rgb(255, 255, 255);
 }
 
 .button-container {
@@ -225,6 +268,11 @@ hr {
 .icons {
   display: flex;
   font-size: 2rem;
+}
+@media (min-width: 700px) {
+  .icons {
+    font-size: 2.5rem;
+  }
 }
 
 .logo-container {
