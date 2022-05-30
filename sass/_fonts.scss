@@ -1,7 +1,7 @@
 // @use "../node_modules/bootstrap/scss/bootstrap.scss";
 @use "colors";
 
-* {
+body {
   font-family: "Montserrat", sans-serif;
   color: colors.$white100;
 }
@@ -19,9 +19,11 @@ h2{
 
 h3{
   margin-top: 2rem;
+  color: colors.$white30;
 }
 
 p{
   font-weight: 500;
   line-height: 130%;
 }
+

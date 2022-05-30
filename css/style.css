@@ -4,17 +4,25 @@
   box-sizing: border-box;
 }
 
+i {
+  color: rgb(255, 255, 255);
+}
+
+textarea,
+input {
+  font-family: "Montserrat", sans-serif;
+}
+
 body {
-  background-color: hotpink;
+  background-image: radial-gradient(circle at 0% 50%, #555555, #222222);
 }
 
 header {
-  height: 500px;
-  background-image: linear-gradient(135deg, #00dca1, #004690);
+  height: 650px;
 }
 @media (min-width: 700px) {
   header {
-    height: 775px;
+    height: 800px;
   }
 }
 
@@ -65,7 +73,6 @@ header {
 
 .center-container {
   display: flex;
-  background-image: linear-gradient(135deg, #00dca1, #004690);
   padding: 2rem;
 }
 @media (min-width: 700px) {
@@ -75,7 +82,6 @@ header {
   }
 }
 .center-container .catcher {
-  border: 1px solid hotpink;
   display: flex;
   flex-direction: column;
 }
@@ -87,12 +93,15 @@ header {
 
 footer {
   display: flex;
+  margin: 2rem;
+  padding-bottom: 1rem;
   flex-direction: column;
-  background-image: linear-gradient(135deg, #00ffbb 20%, #0078aa 90%);
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  align-items: center;
+  border-radius: 8px;
+  background-image: linear-gradient(135deg, #00dca1, #004690);
+}
+footer h2 {
+  padding-bottom: 0.2rem;
 }
 footer .icons {
   display: flex;
@@ -100,7 +109,35 @@ footer .icons {
   gap: 3rem;
 }
 
-* {
+.partners {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+.partners .refs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.partners .refs .fit img {
+  margin-right: 3rem;
+  margin-top: 3rem;
+  width: 5rem;
+  height: 3rem;
+  object-fit: scale-down;
+}
+@media (min-width: 700px) {
+  .partners .refs .fit img {
+    align-content: flex-start;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    width: 7rem;
+    height: 6rem;
+  }
+}
+
+body {
   font-family: "Montserrat", sans-serif;
   color: rgb(255, 255, 255);
 }
@@ -118,6 +155,7 @@ h2 {
 
 h3 {
   margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 p {
@@ -148,21 +186,40 @@ p {
   border: 2px solid rgb(255, 255, 255);
   font-weight: 500;
 }
+.button-container .button:hover {
+  background-color: rgb(255, 255, 255);
+  color: #0078aa;
+  font-weight: 500;
+}
 
-.button:hover {
+#submit {
+  background-color: transparent;
+  border-radius: 100px;
+  padding-top: 1rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  font-size: 1rem;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+}
+#submit:hover {
   background-color: rgb(255, 255, 255);
   color: #0078aa;
   font-weight: 500;
 }
 
 .card {
+  margin: 2rem;
+  border-radius: 8px;
   background-image: linear-gradient(135deg, #00dca1, #004690);
 }
 
 hr {
-  border: 2px solid rgb(255, 255, 255);
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 2rem;
 }
 
 .icons {
@@ -174,7 +231,6 @@ hr {
   padding-top: 1rem;
   display: flex;
   justify-content: center;
-  border: 1px solid hotpink;
   height: 7rem;
 }
 @media (min-width: 700px) {
@@ -182,6 +238,18 @@ hr {
     padding-top: 2rem;
     height: 9rem;
   }
+}
+
+.field {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+}
+.field:focus {
+  outline: 3px solid #00ffbb;
 }
 
 /*# sourceMappingURL=style.css.map */

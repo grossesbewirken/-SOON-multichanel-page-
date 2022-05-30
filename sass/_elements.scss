@@ -23,24 +23,43 @@
     align-items: center;
     border: 2px solid colors.$white100;
     font-weight: 500;
+    &:hover{
+      background-color: colors.$white100;
+      color: colors.$gbw-dark;
+      font-weight: 500;
+    }
   }
 }
 
-.button:hover{
-  background-color: colors.$white100;
-  color: colors.$gbw-dark;
-  font-weight: 500;
+
+#submit{
+  background-color: transparent;
+  border-radius: 100px;
+  padding-top: 1rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  font-size: 1rem;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: colors.$white100;
+  border: 2px solid colors.$white100;
+  &:hover{
+    background-color: colors.$white100;
+    color: colors.$gbw-dark;
+    font-weight: 500;
+  }
 }
 
-
 .card {
+  margin: 2rem;
+  border-radius: 8px;
   background-image: colors.$gbw-grad-dark;
 }
 
 hr {
-  border: 2px solid colors.$white100;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  border: 1px solid colors.$white100;
+  margin: 2rem;
 }
 
 .icons {
@@ -52,10 +71,21 @@ hr {
   padding-top: 1rem;
   display: flex;
   justify-content: center;
-  border: 1px solid hotpink;
   height: 7rem;
   @media (min-width: 700px) {
     padding-top: 2rem;
     height:9rem;
+  }
+}
+
+.field{
+  padding: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  &:focus{
+    outline: 3px solid colors.$gbw-light;
   }
 }

@@ -20,12 +20,14 @@
     ></script>
 
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <title>grosses-portfolio</title>
   </head>
 
 
 
   <body>
+
+
 
 <!-- H E A D E R -->
     <header>
@@ -50,7 +52,7 @@
             <h1>media-design</h1>
             <h2>since 2004</h2>
             <p>
-              I met amazing people and created awesome print editions. Was a design editor in famous newspapers and magazines. And after all these years i love it.
+              I met amazing people and created awesome print editions. I was a design editor in famous newspapers and built magazines up from scratch. And i love it.
               <div class="button-container">
                 <div class="button">top 3 magazines</div>
               </div>
@@ -72,11 +74,11 @@
           <h1>web-design</h1>
           <h2>since 2011</h2>
           <p>
-            I love creating web layouts. In the end it turned out great, but I still feel sorry for the WebDevelopers that had to realize my ideas.
+            I love creating web layouts. In the end it always turned out great, but I still feel sorry for the WebDevelopers that had to realize my ideas.
           </p>
           <h2>2022</h2>
           <p>
-            That's why i become a WebDeveloper as an DCI student. More knowledge of what WebDevs do and more fun for all.
+            That's why i become a WebDeveloper as an DCI student. More knowledge of what WebDevs do and much more fun for all of us.
           </p>
           <div class="button-container">
             <div class="button">top 3 projects</div>
@@ -98,7 +100,7 @@
           <h1>brand-design</h1>
           <h2>since 2017</h2>
           <p>
-            That is so awesome. Designing a companies brand is the most amazing experience i can image. 'Cause everything is build up from scratch. With the trust of the board members and great communication my passion becomes part of their success.
+            That is so awesome! Designing a companies brand is the most amazing experience i can image. With the trust of the board members and great communication my passion becomes part of their success.
           </p>
           <div class="button-container">
             <div class="button">see the companies</div>
@@ -111,8 +113,7 @@
         <div class="catcher">
           <h1>Nice to meet you!</h1>
           <h2>
-            I'm a pro designer becoming a web developer to become your top
-            designer
+            I'm a pro designer becoming a web developer to become your top designer
           </h2>
           <div class="button-container">
             <div class="button">about me</div>
@@ -120,26 +121,56 @@
         </div>
       </div>
 
-      <div class="center-container">
-        <div class="catcher">
-          <h1>Wanne talk?</h1>
-          <h2>formular</h2>
-          <ul>
-            <li>first</li>
-            <li>second</li>
-            <li>mail</li>
-            <li>text</li>
-          </ul>
+      <hr>
 
-          <div class="button-container">
-            <div class="button">submit</div>
+<!-- F O R M S P R E E -->
+      <form action="https://formspree.io/f/mzbokdbr" method="post">
+        <div class="center-container">
+          <div class="catcher">
+            <h1>Let's start something awesome</h1>
+
+            <div>
+                <input type="text" 
+                class="field"
+                id="name"
+                name="name"
+                required
+                placeholder="your name"
+                minlength="3">
+            </div>
+
+            <div>
+              <input type="email"
+              class="field"
+              id="e-mail"
+              name="e-mail"
+              required
+              placeholder="your e-mail">
+            </div>
+            
+            <div>
+              <textarea
+              class="field"
+              name="mail-content"
+                id="mail-content"
+                cols="30"
+                rows="7"
+                placeholder="What do we want to talk about?">
+            </textarea>
+          </div>
+
+            <div class="button-container">
+              <button type="submit" id="submit">submit</button>
+            </div>
           </div>
         </div>
-      </div>
+      </form>
+
     </main>
 
     <!-- F O O T E R -->
     <footer>
+      <h2>check it</h2>
       <div class="icons">
         <i class="fa-brands fa-github"></i>
         <i class="fa-solid fa-desktop"></i>
@@ -149,10 +180,29 @@
         <!-- <a href="https://www.instagram.com/grossesbewirken/" target="blank"><i class="fa-brands fa-instagram footicon"></i></a> -->
         <!-- <a href="https://www.pinterest.de/grossesbewirken" target="blank"><i class="fa-brands fa-pinterest-p footicon"></i></a> -->
       </div>
-      <hr>
-      <div class="catcher">
-        <h2>partners and clients</h2>
-      </div>
     </footer>
+
+    <hr>
+
+    <div class="partners">
+        <div>
+          <h4>partners and clients:</h4>
+        </div>
+        <div class="refs">
+          <div class="fit"><img src="/referenzen/white_dhb.png" alt=""></div>
+          <div class="fit"><img src="/referenzen/white_esport.png" alt=""></div>
+          <div class="fit"><img src="/referenzen/white_fairdrive.png" alt=""></div>
+          <div class="fit" id="shrink"><img src="/referenzen/white_sportbild.png" alt=""></div>
+          <div class="fit"><img src="/referenzen/white_interwetten.png" alt=""></div>
+          <div class="fit"><img src="/referenzen/white_man.png" alt=""></div>
+          <div class="fit"><img src="/referenzen/white_pepper.png" alt=""></div>
+          <div class="fit"><img src="/referenzen/white_philips.png" alt=""></div>
+          <div class="fit"><img src="/referenzen/white_sportbildplus.png" alt=""></div>
+          <div class="fit"><img src="/referenzen/white_tipico.png" alt=""></div>
+          <div class="fit"><img src="/referenzen/white_tzw.png" alt=""></div>
+          <div class="fit"><img src="/referenzen/white_uni.png" alt=""></div>
+          <div class="fit"><img src="/referenzen/white_betathome.png" alt=""></div>
+        </div>
+    </div>
   </body>
 </html>

@@ -1,7 +1,9 @@
 // @use "../node_modules/bootstrap/scss/bootstrap.scss";
 
-$white50: rgba(255, 255, 255, 0.5);
+;
 $white100: rgba(255, 255, 255, 1);
+$white50: rgba(255, 255, 255, 0.5);
+$white30: rgba(255, 255, 255, 0.3);
 
 $gbw-light: #00ffbb;
 $gbw-dark: #0078aa;
@@ -9,4 +11,4 @@ $gbw-dark: #0078aa;
 $gbw-grad-light: linear-gradient(135deg, #00ffbb 20%, #0078aa 90%);
 $gbw-grad-dark: linear-gradient(135deg, #00dca1, #004690);
 
-// $gbw-grad-dark: radial-gradient(circle at 0% 10%, #009f74, #006c9a 90%);
+$gbw-grad-back: radial-gradient(circle at 0% 50%, #555555, #222222);
