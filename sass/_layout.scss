@@ -16,6 +16,9 @@ header {
 // C A R D S
 
 .card {
+  margin: 2rem;
+  border-radius: 8px;
+  background-image: colors.$gbw-grad-dark;
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -43,6 +46,10 @@ header {
 //
 // C A R D - P I C T U R E S
 //
+
+.Media{
+  background-image: url(/pictures/maddin_bg.png);
+}
 .picMedia {
   height: 350px;
   background-color: grey;
@@ -50,12 +57,20 @@ header {
     height: 600px;
   }
 }
+
+.Web{
+  background-image: url(/pictures/maddin_bg.png);
+}
 .picWeb {
   height: 350px;
   background-color: grey;
   @media (min-width: 700px) {
     height: 600px;
   }
+}
+
+.Brand{
+  background-image: url(/pictures/maddin_bg.png);
 }
 .picBrand {
   height: 350px;
