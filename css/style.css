@@ -14,12 +14,19 @@ input {
 }
 
 body {
-  background-image: radial-gradient(circle at 50% 50%, #555555, #111111);
+  background-image: radial-gradient(circle at 0% 0%, #0bb3a2, #17324b 80%);
   background-attachment: fixed;
 }
 
 header {
   height: 650px;
+}
+header .claim {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 @media (min-width: 700px) {
   header {
