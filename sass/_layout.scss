@@ -52,11 +52,11 @@ header {
 // C A R D - P I C T U R E S
 
 .Media{
-  background-image: url(/pictures/gbw_print5_bg.png);
+  background-image: url(../pictures/gbw_print5_bg.png);
   background-size: cover;
 
   .picMedia {
-    background-image: url(/pictures/gbw_print.jpg);
+    background-image: url(../pictures/gbw_print.jpg);
     background-position: center;
     background-size: cover;
     box-shadow: 5px 10px 30px black;
@@ -70,11 +70,11 @@ header {
 }
 
 .Web{
-  background-image: url(/pictures/maddin_bg.png);
+  background-image: url(../pictures/maddin_bg.png);
   background-size: cover;
 
   .picWeb {
-    background-image: url(/pictures/gbw_web.png);
+    background-image: url(../pictures/gbw_web.png);
     background-position: center;
     background-size: cover;
     background-position: top;
@@ -88,11 +88,11 @@ header {
 }
 
 .Brand{
-  background-image: url(/pictures/gbw_brand_bg.png);
+  background-image: url(../pictures/gbw_brand_bg.png);
   background-size: cover;
 
   .picBrand {
-    background-image: url(/pictures/gbw_brand.png);
+    background-image: url(../pictures/gbw_brand.png);
     background-position: center;
     background-size: 180%;
     box-shadow: 5px 10px 30px black;
