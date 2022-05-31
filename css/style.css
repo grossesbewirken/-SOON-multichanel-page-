@@ -29,7 +29,7 @@ header {
 
 .card {
   margin: 2rem;
-  border-radius: 25px;
+  border-radius: 15px;
   object-fit: contain;
   background-position: center;
   display: flex;
@@ -43,7 +43,7 @@ header {
     padding-left: 5rem;
     padding-right: 5rem;
     margin: 5rem;
-    border-radius: 15px;
+    border-radius: 30px;
   }
 }
 .card .block {
@@ -64,7 +64,7 @@ header {
 }
 
 .Media {
-  background-image: url(/pictures/gbw_print_bg.png);
+  background-image: url(/pictures/gbw_print5_bg.png);
   background-size: cover;
 }
 .Media .picMedia {
@@ -77,7 +77,7 @@ header {
 }
 @media (min-width: 700px) {
   .Media .picMedia {
-    height: 300px;
+    height: 350px;
   }
 }
 
@@ -157,6 +157,12 @@ footer .icons {
   display: flex;
   gap: 2rem;
 }
+@media (min-width: 700px) {
+  footer {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
 
 .partners {
   display: flex;
@@ -204,7 +210,7 @@ h1 {
 h2 {
   font-weight: 800;
   margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -215,6 +221,10 @@ h3 {
 p {
   font-weight: 500;
   line-height: 130%;
+}
+
+strong {
+  color: #84eed5;
 }
 
 /* - - L I N K S - - - - */
@@ -241,7 +251,8 @@ a:active {
 }
 
 .button-container {
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -291,6 +302,25 @@ a:active {
 hr {
   border: 1px solid rgb(255, 255, 255);
   margin: 2rem;
+}
+@media (min-width: 700px) {
+  hr {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+.line {
+  display: none;
+  border: 2px solid #00ebb4;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-right: 15rem;
+}
+@media (min-width: 700px) {
+  .line {
+    display: block;
+  }
 }
 
 .icons {
