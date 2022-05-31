@@ -358,4 +358,8 @@ hr {
   outline: 3px solid #00ebb4;
 }
 
+#mail-content {
+  resize: none;
+}
+
 /*# sourceMappingURL=style.css.map */
